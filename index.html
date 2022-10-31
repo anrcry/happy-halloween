@@ -3,6 +3,24 @@
   <head>
     <title>Happy Halloween 2022 👻</title>
     <link rel="stylesheet" href="./index.css" type="text/css">
+    <script src="https://raw.githubusercontent.com/arscan/pleaserotate.js/master/pleaserotate.min.js"></script>
+    <script>
+      const options = {
+          startOnPageLoad: true,
+          onHide: function(){},
+          onShow: function(){},
+          forcePortrait: false,
+          message: "Please Rotate Your Device",
+          // subMessage: "(or click to continue)",
+          allowClickBypass: false,
+          onlyMobile: true,
+          zIndex: 1000,
+          iconNode: null
+      };
+      document.addEventListener("DOMContentLoaded", () => {
+          PleaseRotate.start(options);
+      });
+    </script>
   </head>
   <body>
     <div class="container">
